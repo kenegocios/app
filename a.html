@@ -3,27 +3,27 @@
 <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
+  /*percorrer uma coleção de todos os elementos HTML:*/
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
+    /*procure elementos com um certo atributo:*/
     file = elmnt.getAttribute("w3-include-html");
     if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
+      /*faça uma solicitação HTTP usando o valor do atributo como o nome do arquivo:*/
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
+          /*remove o atributo, e chame essa função mais uma vez:*/
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
         }
       }      
       xhttp.open("GET", file, true);
       xhttp.send();
-      /*exit the function:*/
+      /*sair da função:*/
       return;
     }
   }
@@ -31,11 +31,13 @@ function includeHTML() {
 </script>
 
 <body>
-
-<div w3-include-html="https://kenegocios.github.io/ads/dashboard"></div> 
+<div w3-include-html="https://kenegocios.github.io/ads/b"></div></center>
+</body>
 
 <script>
-includeHTML();
+// Em 1 segundos carrega includeHTML()
+setTimeout(includeHTML, 1000)
+//includeHTML();
 </script>
 
 </body>
