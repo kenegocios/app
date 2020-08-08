@@ -16,7 +16,7 @@ ke.includeHTML = function(cb) {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
           elmnt.removeAttribute("ke-include-html");
-          w3.includeHTML(cb);
+          ke.includeHTML(cb);
         }
       }      
       xhttp.open("GET", file, true);
