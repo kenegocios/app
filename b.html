@@ -3,54 +3,76 @@
 <title>Aguarde...</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://kenegocios.github.io/app/myscript.js"></script>  
-<body id="keblog" class="w3-teal">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
 
-<div class="w3-container">
-  <center><h2>KeBlog</h2>
-  <p>Estamos preparando seu acesso...</p></center>
+<body id="keblog" class="w3-white">
 
-  <div class="w3-light-grey w3-round-xlarge" style="width:100%">
-    <div id="myBar" class="w3-container w3-green w3-round-xlarge" style="height:32px; width:100%">
-   	</div>
-  </div>
+    <div class="w3-container w3-text-theme w3-padding-32">
+        <center>
+            <h2><b>KeBlog</b></h2>
+            <p class="w3-text-teal">Estamos validando seu acesso...</p>
+        </center>
 
-  <center><p id="myP" class="w3-text-white">Carregando <span id="demo" class="w3-text-white">0</span>%</p>
+        <div class="w3-container w3-text-theme w3-padding-32">
+            <table style=" width: 100%; height: 90px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="w3-theme w3-center" data-aa="1430786" style="border:0px; border-radius:10px; padding:0; width:100%; height:auto; overflow:hidden">
+                                    <a href="https://a-ads.com/?partner=1430786">Patrocinado</a>
+                                    <iframe data-aa="1430786" src="//acceptable.a-ads.com/1430786" scrolling="no" style="border:0px; padding:0; width:100%; height:90px; overflow:hidden" allowtransparency="true"></iframe>
+                                    <a href="https://a-ads.com?partner=1430786">KeAds</a>
+                                </div>
+                            </div>
+                        </td>
 
-  <button id="btn" class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Avançar</button></center> 
-</div>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="w3-white-grey w3-round-xlarge w3-padding-32" style="width:100%">
+                <div id="myBar" class="w3-container w3-theme w3-round-large" style="height:25px; width:100%;">
+                </div>
+            </div>
+            <center>
+                <p id="myP" class="w3-text-theme">Carregando <span id="demo" class="w3-text-theme">0</span>%</p>
 
-<script id="myscript">
+                <button id="btn" class="w3-button w3-theme w3-text-white" onclick="myaction()" style="border-radius:10px;">Avançar</button></center>
 
-function move() {
-  
-  var elem = document.getElementById("myBar");   
-  var width = 0;
-  var id = setInterval(frame, 50);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-      document.getElementById("myP").className = "w3-text-white w3-animate-opacity";
-      document.getElementById("myP").innerHTML = "Tupo pronto!";
-      document.getElementById("btn").disabled = false;
+        </div>
+    </div>
 
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      var num = width * 10 / 10;
-      num = num.toFixed(0)
-      document.getElementById("demo").innerHTML = num;
-      document.getElementById("btn").disabled = true;
-    }
-  }
-}
+    <script id="myscript">
+        function move() {
 
-</script>
+            var elem = document.getElementById("myBar");
+            var width = 0;
+            var id = setInterval(frame, 100);
 
-<script id="move">
-move()
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    document.getElementById("myP").className = "w3-text-teal w3-animate-opacity";
+                    document.getElementById("myP").innerHTML = "Tupo pronto!";
+                    document.getElementById("btn").disabled = false;
 
-</script>
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    var num = width * 10 / 10;
+                    num = num.toFixed(0)
+                    document.getElementById("demo").innerHTML = num;
+                    document.getElementById("btn").disabled = true;
+
+                }
+            }
+        }
+    </script>
+
+    <script id="myscript">
+        move()
+    </script>
 
 </body>
+
 </html>
