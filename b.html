@@ -32,12 +32,15 @@ function move() {
       clearInterval(id);
       document.getElementById("myP").className = "w3-text-white w3-animate-opacity";
       document.getElementById("myP").innerHTML = "Tupo pronto!";
+      document.getElementById("btn").disabled = false;
+
     } else {
       width++; 
       elem.style.width = width + '%'; 
       var num = width * 10 / 10;
       num = num.toFixed(0)
       document.getElementById("demo").innerHTML = num;
+      document.getElementById("btn").disabled = true;
     }
   }
 }
