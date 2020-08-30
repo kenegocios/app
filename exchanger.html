@@ -1,8 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         .button {
             display: inline-block;
@@ -13,12 +14,12 @@
             text-align: center;
             font-size: 20px;
             padding: 15px;
-            width: 90%;
+            width: 80%;
             transition: all 0.5s;
             cursor: pointer;
             margin: 10px;
         }
-        
+
         .button span {
             cursor: pointer;
             display: inline-block;
@@ -27,7 +28,7 @@
             text-decoration-style: none;
             font-family: Arial, Helvetica, sans-serif
         }
-        
+
         .button span:after {
             content: '\00bb';
             position: absolute;
@@ -36,20 +37,20 @@
             right: -20px;
             transition: 0.5s;
         }
-        
+
         .button:hover span {
             padding-right: 25px;
         }
-        
+
         .button:hover span:after {
             opacity: 1;
             right: 0;
         }
-        
+
         div {
             width: 250px;
             margin: auto;
-            border: 1px solid #1e82f4;
+            border: 2px solid #1e82f4;
             border-radius: 8px;
             padding: 5px;
             margin-top: 20px;
@@ -60,7 +61,7 @@
 
 <body>
 
-    <div tyle="vertical-align:middle; overflow: none">
+    <div style="vertical-align:middle; overflow: none; margin:auto">
         <h2 class="exchange" style='font-family: Arial, Helvetica, sans-serif'>Exchange</h2>
         <button id="1" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>abcvisiteurs</span></button></a>
         <button id="2" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>maxdetrafic</span></button></a>
