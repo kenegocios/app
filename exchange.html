@@ -8,13 +8,14 @@
         .button {
             display: inline-block;
             border-radius: 8px;
-            background-color: #1e82f4;
+            background-color: #2f4f4f;
             border: none;
             color: #FFFFFF;
             text-align: center;
             font-size: 20px;
             padding: 15px;
-            width: 80%;
+            width: 100%;
+            max-width: 270px;
             transition: all 0.5s;
             cursor: pointer;
             margin: 10px;
@@ -37,37 +38,42 @@
             right: -20px;
             transition: 0.5s;
         }
-        
         .button:hover {
-        	background-color: #ff8000;            
+        	background-color: #ff8000;	
+            
         }
 
         .button:hover span {
+        
             padding-right: 25px;
         }
 
         .button:hover span:after {
+        
             opacity: 1;
             right: 0;
         }
 
         div {
-            max-width: 340px;
+        	background-color: #ffffff;
+            max-width: 300px;
             width:auto;
             max-height: auto;
             height: device-height;
             margin: auto;
-            border: 2px solid #1e82f4;
+            border: 2px solid #fffeee;
             border-radius: 8px;
             padding: 5px;
             margin-top: auto;
             text-align: center;
             float: center;
+            opacity:0.95;
         }
     </style>
 </head>
 
-<body>
+<body style="
+background-color: #2f4f4f;">
 
     <div style="vertical-align:middle; overflow: none; margin:auto">
         <h2 class="exchange" style='font-family: Arial, Helvetica, sans-serif'>Exchange</h2>
