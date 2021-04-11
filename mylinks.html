@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 8px;
+            background-color: #2f4f4f;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+            width: 100%;
+            max-width: 270px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            text-decoration-style: none;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover {
+        	background-color: #ff8000;	
+            
+        }
+
+        .button:hover span {
+        
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        
+            opacity: 1;
+            right: 0;
+        }
+
+        div {
+        	background-color: #ffffff;
+            max-width: 300px;
+            width:auto;
+            max-height: auto;
+            height: device-height;
+            margin: auto;
+            border: 2px solid #fffeee;
+            border-radius: 8px;
+            padding: 5px;
+            margin-top: auto;
+            text-align: center;
+            float: center;
+            opacity:0.95;
+        }
+    </style>
+</head>
+
+<body style="
+background-color: #2f4f4f;">
+
+    <div style="vertical-align:middle; overflow: none; margin:auto">
+        <h2 class="exchange" style='font-family: Arial, Helvetica, sans-serif'>Exchange</h2>
+        <button id="1" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>abcvisiteurs</span></button></a>
+        <button id="2" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>maxdetrafic</span></button></a>
+        <button id="3" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>surfgratis.altervista</span></button></a>
+        <button id="4" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>twiclicksurf (1)</span></button></a>
+        <button id="5" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>twiclicksurf (2)</span></button></a>
+        <button id="6" class="button" onclick="btnclick(this.href)" style="vertical-align:middle"><span>twiclicksurf (3)</span></button></a>
+    </div>
+    <script>
+        document.getElementById("1").href = "t-exchange://OnN8OndhYmN2aXNpdGV1cnMuY29tfDY3ODQ4LDE2MzE";
+        document.getElementById("2").href = "t-exchange://OnN8OndtYXhkZXRyYWZpYy5jb218MjY5OSwxNDQx";
+        document.getElementById("3").href = "t-exchange://OnB8c3VyZmdyYXRpcy5hbHRlcnZpc3RhLm9yZ3wyNiw1Mzc";
+        document.getElementById("4").href = "t-exchange://OnN8Ond0d2ljbGlja3N1cmYuaXR8MTAsNDc";
+        document.getElementById("5").href = "t-exchange://OnN8Ond0d2ljbGlja3N1cmYuaXR8MTAsMTQ";
+        document.getElementById("6").href = "t-exchange://OnN8Ond0d2ljbGlja3N1cmYuaXR8MTAsMTE";
+
+        function btnclick(link) {
+            location.href = link;
+        }
+    </script>
+</body>
+
+</html>
