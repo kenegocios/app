@@ -88,7 +88,7 @@ background-color: #836FFF;">
         <button id="8" class="button" onclick="btnclick(this.href)" target="_blank" style="vertical-align:middle"><span>ShopSave</span></button></a>
         <button id="9" class="button" onclick="btnclick(this.href)" target="_blank" style="vertical-align:middle"><span>Next</span></button></a>
         <button id="10" class="button" onclick="btnclick(this.href)" target="_blank" style="vertical-align:middle"><span>Alibaba</span></button></a>
-    </div>
+</div>
     <script>
         document.getElementById("1").href = "https://www.meliuz.com.br/i/ref_466e6c?ref_source=27";
         document.getElementById("2").href = "http://mpago.li/1AEUvfh";
@@ -102,7 +102,14 @@ background-color: #836FFF;">
         document.getElementById("10").href = "https://www.magazinevoce.com.br/magazineJMiranda";
 
         function btnclick(link) {
-            window.open(link);
+            <!--window.open(link);-->
+            var passaValor= function(valor)
+            {
+             window.location = "https://kenegocios.github.io/link/3AnFXC7.html?minhaVariavel="+valor;
+            }
+
+            var valorQueEuQueroPassar = '3AnFXC7';
+            passaValor(valorQueEuQueroPassar);
             <!--location.href = link;-->
         }
     </script>
